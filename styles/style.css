@@ -1,0 +1,374 @@
+@font-face {
+    font-family:"Brawler";
+    src: url("../fonts/Brawler/Brawler-Regular.ttf");
+}
+@font-face {
+    font-family:"Josefin-sans";
+    src: url("../fonts/Josefin-Sans/JosefinSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Josefin-sans-light-italic";
+    src: url("../fonts/Josefin-Sans/static/JosefinSans-LightItalic.ttf");
+}
+@font-face {
+    font-family: "Josefin-sans-bold";
+    src: url("../fonts/Josefin-Sans/static/JosefinSans-Bold.ttf");
+}
+
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-inicio estilos compartidos-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+/*--------------------------------------------------------------inicio del body--------------------------------------------------------------*/
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/*--------------------------------------------------------------fin del body-------------------------------------------------------------*/
+
+/*--------------------------------------------------------------inicio del header--------------------------------------------------------------*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+nav{
+    display: grid;
+    grid-template-columns: 200px 900px 200px;
+    grid-template-rows: 120px;
+    align-items: center;
+    column-gap: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: #A40019;
+    padding-bottom: 20px;
+}
+#logo-nav{
+    grid-column: 1/2;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 95px;
+    height: 75px;
+    width: 160px;
+}
+#nav-botons{
+    margin-left: 35px;
+    padding-top: 60px;
+    width: 100%;
+    grid-column: 2/3;
+    display: flex;
+}
+.p-nav{
+    margin-left: 15px;
+    color: white;
+    padding-right: 20px;
+    font-family: "josefin-sans";
+}
+#turnero{
+    display: flex;
+    grid-column: 3/4;
+    padding-top: 20px ;
+    height: 60px ;
+    width: 100%;
+}
+#turnero p {
+    padding-top: 20px;
+    color: white;
+    font-family:"Josefin-sans" ;
+}
+#img-Turnero{
+    position: relative;
+    left: 20px;
+    height: 52px;
+    width: 52px;
+} 
+/*--------------------------------------------------------------fin del header--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------inicio footer--------------------------------------------------------------*/
+#footer-main{
+    margin-top: 50px;
+    height: 331px;
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 166px 165px;
+    align-items: center;
+}
+#logo-footer,#logo-footer img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 150px;
+    width: 200px;
+    padding-bottom: 80px;
+}
+#ubicacion-footer{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: last baseline;
+}
+#ubicacion-footer a{
+    color: black;
+    text-decoration: none;
+}
+#horarios-footer{
+    align-self: baseline;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#horarios-footer a{
+    color: black;
+    text-decoration: none;
+}
+#contactanos-footer{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+#redes-sociales-footer,#redes-sociales-footer a{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+#redes-sociales-footer img{
+    padding-left: 50px;
+    padding-top: 20px;
+    height: 30px;
+    width: 30px;
+}
+/*--------------------------------------------------------------fin footer--------------------------------------------------------------*/
+
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-fin estilos compartidos-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-inicio index-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+/*--------------------------------------------------------------inicio del main--------------------------------------------------------------*/
+
+/*............................................................. inicio logo main.........................................................*/
+#logo-main{
+    height: 500px;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+}
+#imglogo-main{
+    background-color: #A40019;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;                           
+    height: 191px;
+}
+#logo-main h1{
+    text-align: center;
+    font-family:"Brawler";
+    font-weight: lighter;
+    margin: 0px;
+    padding-top: 40px;
+    font-size: 24px;
+    color: #A40019;
+}
+/*............................................................. fin logo main.........................................................*/
+
+/*............................................................. inicio trat gine main.........................................................*/
+#tratamientos-ginecologicos{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: 73px 400px 40px;
+    row-gap: 5px;
+    background-color: #A40019;
+}
+#h2-gineco{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: "Josefin-sans-light-italic";
+    background-color: white;
+    color: #A40019;
+}
+#h2-gineco h2{
+    font-size: 32px;
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+#imgsgineco{
+    grid-row: 2/3;
+    grid-column: 1/5;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    column-gap: 0px;
+    row-gap: 0px;
+}
+.imgtratamientos1{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-color: #A40019;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.imgtratamientos2{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #A40019;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.imgtratamientos3{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #A40019;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.imgtratamientos4{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-color: #A40019;
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.imgtratamientos-gineco{
+    align-content: center;
+    background-color: #A40019;
+    height: 200px;
+    width: 95%;
+}
+/*............................................................. fin trat gine main.........................................................*/
+/*............................................................. inicio trat este main.........................................................*/
+#tratamientos-esteticos{
+    background-color: #A40019 ;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: 73px 400px 40px;
+    row-gap: 5px;
+}
+#h2-estetica{
+    display: flex;
+    justify-self: end;
+    padding: 20px;
+    align-items: center;
+    font-family: "Josefin-sans-light-italic";
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 1/5;
+    color: #A40019;
+}
+#h2-estetica h2{
+    font-size: 32px;
+    background-color: white;
+
+}
+#imgestetica{
+    grid-row: 2/3;
+    grid-column: 1/5;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    column-gap: 0px;
+    row-gap: 0px;
+}
+.imgtratamientos-estetica{
+    align-content: center;
+    background-color: #A40019;
+    height: 200px;
+    width: 95%;
+}
+#tratamientos-esteticos .ver-mas{
+    justify-self: end;
+}
+.ver-mas{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width:75px ;
+    background-color: white;
+    display: flex;
+    align-items:center ;
+    padding-left: 10px;
+}
+.ver-mas a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Josefin-sans-light-italic";
+    color: #A40019;
+}
+/*............................................................. fin trat este main.........................................................*/
+
+/*............................................................. inicio promociones main.........................................................*/
+
+#promociones{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 300px;
+}
+#promociones h2{
+    padding: 25px 0px 20px 0px;
+    background-color: #A40019;
+    font-size: 40px;
+    text-align: center;
+    font-family: "josefin-sans";
+    color: white;
+}
+#carrusel{
+    display: grid;
+    grid-template-columns:33% 33% 33% ;
+    grid-template-rows: 300px ;
+    margin: 20px;
+    align-items: center;
+    justify-items: center;
+}
+.imgpromocion{
+    height: 200px;
+    width: 95%;
+}
+#promociones .ver-mas ,#promociones .ver-mas a{
+    padding: 0%;
+    font-family: "Josefin-sans-bold";
+    flex-wrap: wrap;
+    width: 200px ;
+    height: 100px;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+    background-color: #A40019;
+    color: white;
+}
+/*........................................................fin promociones main ............................................................*/
+
+/*--------------------------------------------------------------fin del main--------------------------------------------------------------*/
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-fin index-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+
